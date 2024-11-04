@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair Salon</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footerstyle.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPUJ3XW9IE7WrKVb6u-jnjJ92v2irO18U&callback=console.debug&libraries=maps,marker&v=beta"
+    ></script>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo">
+        <!-- Placeholder logo with red background -->
+        <div class="logo-placeholder"></div>
+        <span class="logo-text"
+          >DONNA D' STYLIST<br /><small>Salon</small></span
+        >
+      </div>
+      <nav class="nav-menu">
+        <a href="#">HOME</a>
+        <a href="#">SERVICES</a>
+        <a href="#">GALLERY</a>
+        <a href="#">OUR STAFF</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">LOGIN</a>
+        <a href="#" class="book-btn">BOOK</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container mt-4">
+        <h1>Welcome to Our Hair Salon</h1>
+        <p>Experience top-notch hair styling and care services.</p>
+      </div>
+      <gmp-map
+        center="49.9232292175293,-97.15328216552734"
+        zoom="14"
+        map-id="DEMO_MAP_ID"
+      >
+        <gmp-advanced-marker
+          position="49.9232292175293,-97.15328216552734"
+          title="My location"
+        ></gmp-advanced-marker>
+      </gmp-map>
+    </main>
+
+    <footer class="footer-container">
+      <div class="footer-nav">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">Our Staff</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div><span class="logo-placeholder"></span> © 2024 Company, Inc</div>
+      <div class="social-icons">
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Facebook">📘</a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
