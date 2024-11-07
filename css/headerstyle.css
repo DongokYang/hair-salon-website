@@ -8,7 +8,6 @@
   border-bottom: 1px solid #ddd;
 }
 
-/* Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -22,12 +21,10 @@
   flex-shrink: 0; /* Prevents logo from shrinking */
 }
 
-/* Navigation Menu */
 .nav-menu {
   display: flex;
   gap: 20px;
   align-items: center;
-  flex-grow: 1; /* Allows menu to take up remaining space */
   justify-content: center; /* Centers items within the menu */
   flex-wrap: nowrap; /* Prevents items from wrapping */
 }
