@@ -29,9 +29,7 @@ function initMap() {
 
 // Call loadGoogleMaps to load the API and initialize the map
 loadGoogleMaps();
-$(".carousel").carousel({
-  interval: 2000,
-});
+
 /*
 async function fetchReviews() {
   const placeId = "ChIJZTvPShF06lIRODwYXB_aM44"; // Replace this with your actual Place ID
