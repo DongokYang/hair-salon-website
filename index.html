@@ -27,18 +27,132 @@
     </header>
 
     <main>
-      <div class="container mt-4">
-        <h1>Welcome to Our Hair Salon</h1>
-        <p>Experience top-notch hair styling and care services.</p>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/images/homeCarouselFirst.png"
+              class="d-block w-100"
+              alt="First slide"
+            />
+            <!-- Overlay content -->
+            <div class="carousel-caption d-md-block">
+              <h3>Welcome to</h3>
+              <h2>
+                <span class="salon-name">Donna D' Stylist Salon</span>
+              </h2>
+              <p>
+                A family-owned hair salon dedicated to leaving you feeling and
+                looking your best
+              </p>
+              <a href="#" class="btn btn-danger">Make An Appointment</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/homeCarouselSecond.png"
+              class="d-block w-100"
+              alt="Second slide"
+            />
+            <!-- Overlay content -->
+            <div class="carousel-caption d-md-block">
+              <h3>Welcome to</h3>
+              <h2>
+                <span class="salon-name">Donna D' Stylist Salon</span>
+              </h2>
+              <p>
+                A family-owned hair salon dedicated to leaving you feeling and
+                looking your best
+              </p>
+              <a href="#" class="btn btn-danger">Make An Appointment</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/homeCarouselThird.png"
+              class="d-block w-100"
+              alt="Third slide"
+            />
+            <!-- Overlay content -->
+            <div class="carousel-caption d-md-block">
+              <h3>Welcome to</h3>
+              <h2>
+                <span class="salon-name">Donna D' Stylist Salon</span>
+              </h2>
+              <p>
+                A family-owned hair salon dedicated to leaving you feeling and
+                looking your best
+              </p>
+              <a href="#" class="btn btn-danger">Make An Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
       <div class="container mt-4">
         <h1>Customer Reviews</h1>
         <div id="reviews"></div>
       </div>
 
       <div class="container mt-4">
-        <h1>Map</h1>
-        <div id="map" style="width: 400px; height: 40vh"></div>
+        <h2 class="location-title">Location</h2>
+        <p class="address">1551 Arlington St, Winnipeg, MB R2X 1V2</p>
+
+        <div class="location-container">
+          <!-- Image Container on the left -->
+          <div class="location-image">
+            <img src="/images/facebookGold.png" alt="Salon Interior" />
+          </div>
+
+          <!-- Map on the right side -->
+          <div id="map" class="map"></div>
+        </div>
       </div>
     </main>
 
