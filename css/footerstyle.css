@@ -1,45 +1,90 @@
-.footer-container {
-  background-color: #1c1c1c; /* Dark background */
-  color: #cfcfcf; /* Light gray text */
-  padding: 20px 30px;
+/* General Footer Styling */
+.footer {
+  background-color: #1c1c1c;
+  color: #c7c7c7;
+  padding: 20px 0;
   text-align: center;
 }
 
-.footer-container .footer-nav {
-  margin-bottom: 10px;
+/* Top Navigation Links */
+.footer-top {
+  margin-bottom: 15px;
 }
 
-.footer-container .footer-nav a {
-  color: #cfcfcf;
-  margin: 0 10px;
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: #c7c7c7;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
-.footer-container .footer-nav a:hover {
-  color: #fcbf49; /* Gold color on hover */
+.footer-nav a:hover {
+  color: #fcbf49; /* Change color on hover */
 }
 
-.footer-container .logo-placeholder {
+/* Divider */
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background-color: #333333;
+  margin: 10px auto;
+  width: 80%; /* Centered */
+}
+
+/* Bottom Section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  font-size: 0.85rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-logo-img {
+  height: 2em;
+  width: auto;
+  margin-right: -5px;
+  vertical-align: middle;
+}
+
+/* Social Media Icons */
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: red; /* Placeholder red color */
-  border-radius: 50%;
-  margin-right: 5px;
+  width: 1.5em;
+  height: 1.5em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
 }
 
-.footer-container .social-icons {
-  margin-top: 10px;
+.instagram {
+  background-image: url("/images/instagramWhite.png");
 }
 
-.footer-container .social-icons a {
-  color: #cfcfcf;
-  margin: 0 5px;
-  font-size: 18px;
-  text-decoration: none;
+.instagram:hover {
+  background-image: url("/images/instagramGold.png");
 }
 
-.footer-container .social-icons a:hover {
-  color: #fcbf49; /* Gold color on hover */
+.facebook {
+  background-image: url("/images/facebookWhite.png");
+}
+
+.facebook:hover {
+  background-image: url("/images/facebookGold.png");
 }

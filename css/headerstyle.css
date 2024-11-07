@@ -1,0 +1,54 @@
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 200px; /* Adjusts the logo size, modify if needed */
+  max-width: 20vw; /* Limits the logo size on larger screens */
+  margin-right: 10px;
+  background-image: url(/images/fullLogoWhiteBackground.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0; /* Prevents logo from shrinking */
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-grow: 1; /* Allows menu to take up remaining space */
+  justify-content: center; /* Centers items within the menu */
+  flex-wrap: nowrap; /* Prevents items from wrapping */
+}
+
+.nav-menu a {
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  color: #000;
+  white-space: nowrap; /* Prevents individual links from wrapping */
+}
+
+/* Book Button */
+.book-btn {
+  background-color: #fcbf49;
+  color: #000;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  flex-shrink: 0; /* Prevents button from shrinking */
+}
