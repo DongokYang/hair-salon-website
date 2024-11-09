@@ -83,3 +83,38 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+.services-section {
+  padding: 50px 0;
+}
+
+.service-item {
+  margin-bottom: 30px;
+}
+
+.service-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #f7f7f7;
+  transition: transform 0.3s ease;
+}
+
+.service-img:hover {
+  transform: scale(1.05);
+}
+
+h4 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.service-divider {
+  width: 40px;
+  border: 2px solid #e31b6d;
+  margin: 10px auto;
+}
+
+p {
+  color: #6c757d;
+}
